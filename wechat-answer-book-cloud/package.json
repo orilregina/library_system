@@ -1,0 +1,14 @@
+{
+  "name": "answer-book-wechat-miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tarot-style answer book mini program cloud development edition.",
+  "scripts": {
+    "check:server": "node --check server/index.js && node --check server/answers.js && node --check server/config.js && node --check server/storage.js && node --check server/launch-check.js",
+    "check:launch": "node server/launch-check.js",
+    "check:cloud": "node --check cloudfunctions/answerBook/index.js && node --check miniprogram/app.js && node --check miniprogram/utils/api.js && node --check miniprogram/utils/config.js && node --check miniprogram/pages/index/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,87 @@
+<view class="page-shell">
+  <view class="sky-field">
+    <view class="orb orb--one"></view>
+    <view class="orb orb--two"></view>
+  </view>
+
+  <view class="hero">
+    <view class="hero__seal">
+      <view class="hero__moon"></view>
+      <view class="hero__eye"></view>
+    </view>
+    <text class="hero__eyebrow">MIDNIGHT ORACLE</text>
+    <text class="hero__title">月影答案书</text>
+    <text class="hero__subtitle">把问题交给夜色，以一张象征卡片获得片刻灵感。内容仅用于娱乐、记录与自我整理。</text>
+  </view>
+
+  <view class="panel composer">
+    <view class="composer__header">
+      <text class="composer__label">写下此刻的问题</text>
+      <text class="composer__hint">{{ question.length }}/60</text>
+    </view>
+    <textarea
+      class="composer__input"
+      maxlength="60"
+      placeholder="例如：我今天应该把注意力放在哪里？"
+      placeholder-class="composer__placeholder"
+      value="{{ question }}"
+      bindinput="onQuestionInput"
+    />
+
+    <button class="draw-button" bindtap="onDrawTap" loading="{{ loading }}">
+      {{ loading ? '星盘正在转动' : '抽取今日卡片' }}
+    </button>
+  </view>
+
+  <view class="result-wrap" wx:if="{{ result }}">
+    <view class="tarot-card panel">
+      <view class="tarot-card__frame" style="border-color: {{ result.accent }}">
+        <view class="tarot-card__ornament tarot-card__ornament--top"></view>
+        <view class="tarot-card__body">
+          <text class="tarot-card__arcana">{{ result.cardName }}</text>
+          <text class="tarot-card__orientation">{{ result.orientation }}</text>
+
+          <view class="tarot-card__sigil" style="box-shadow: 0 0 54rpx {{ result.accent }}">
+            <view class="tarot-card__orbit tarot-card__orbit--outer"></view>
+            <view class="tarot-card__orbit tarot-card__orbit--inner"></view>
+            <view class="tarot-card__moon"></view>
+            <view class="tarot-card__spark tarot-card__spark--one"></view>
+            <view class="tarot-card__spark tarot-card__spark--two"></view>
+            <view class="tarot-card__spark tarot-card__spark--three"></view>
+          </view>
+
+          <text class="tarot-card__answer">“{{ result.answer }}”</text>
+
+          <view class="tag-row">
+            <text class="tag" wx:for="{{ result.keywords }}" wx:key="*this">{{ item }}</text>
+          </view>
+
+          <text class="tarot-card__interpretation">{{ result.interpretation }}</text>
+        </view>
+        <view class="tarot-card__ornament tarot-card__ornament--bottom"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="panel history" wx:if="{{ history.length }}">
+    <view class="history__header">
+      <text class="history__title">最近的仪式记录</text>
+      <view class="history__actions">
+        <text class="history__meta">{{ history.length }} 条</text>
+        <text class="history__clear" bindtap="onClearHistory">清空</text>
+      </view>
+    </view>
+
+    <view class="history__list">
+      <view class="history__item" wx:for="{{ history }}" wx:key="id">
+        <text class="history__question">{{ item.question }}</text>
+        <text class="history__answer">{{ item.answer }}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="panel links">
+    <navigator class="links__item" url="/pages/about/index">关于月影答案书</navigator>
+    <navigator class="links__item" url="/pages/privacy/index">隐私说明</navigator>
+  </view>
+</view>

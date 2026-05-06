@@ -1,0 +1,22 @@
+page {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(44, 84, 146, 0.55), transparent 30%),
+    radial-gradient(circle at 90% 16%, rgba(130, 68, 92, 0.42), transparent 34%),
+    linear-gradient(180deg, #091225 0%, #101936 46%, #241728 100%);
+  color: #f8ecd3;
+  font-family: "Songti SC", "STSong", "FangSong", serif;
+}
+
+.panel {
+  background:
+    linear-gradient(145deg, rgba(14, 21, 45, 0.88), rgba(22, 16, 34, 0.76)),
+    radial-gradient(circle at top left, rgba(223, 183, 101, 0.12), transparent 38%);
+  border: 1rpx solid rgba(223, 183, 101, 0.38);
+  box-shadow: 0 24rpx 70rpx rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(12rpx);
+}
+
+.gold-text {
+  color: #e4c680;
+}

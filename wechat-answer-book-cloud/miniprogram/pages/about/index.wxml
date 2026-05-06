@@ -1,0 +1,24 @@
+<view class="info-page">
+  <view class="page-hero">
+    <text class="eyebrow">ABOUT</text>
+    <text class="title">关于月影答案书</text>
+    <text class="lead">这是一款以塔罗绘画、深夜蓝与旧金纹样为视觉语言的灵感卡牌小程序。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">产品定位</text>
+    <text class="desc">月影答案书提供轻量的卡牌抽取与答案记录体验。它适合在犹豫、复盘或需要一点仪式感时使用，帮助你把注意力重新放回当下。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">使用方式</text>
+    <text class="desc">1. 写下一个具体、温和的问题。</text>
+    <text class="desc">2. 点击“抽取今日卡片”，获得一句答案、关键词与解释。</text>
+    <text class="desc">3. 最近记录仅保存在本机，方便你回看自己的问题脉络。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">重要说明</text>
+    <text class="desc">本小程序内容仅用于娱乐、灵感启发与自我整理，不构成心理、医疗、法律、投资或其他专业建议。重大决定请结合现实信息并咨询专业人士。</text>
+  </view>
+</view>

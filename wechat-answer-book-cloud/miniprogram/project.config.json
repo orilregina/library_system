@@ -1,0 +1,25 @@
+{
+  "description": "月影答案书微信小程序云开发版。正式提审前请替换 appid，并在开发者工具中开通云开发环境。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "bundle": false,
+    "userConfirmedBundleSwitch": false,
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileHotReLoad": true,
+    "coverView": true,
+    "showShadowRootInWxmlPanel": true,
+    "ignoreUploadUnusedFiles": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "latest",
+  "appid": "touristappid",
+  "projectname": "moon-answer-book-cloud",
+  "cloudfunctionRoot": "../cloudfunctions",
+  "condition": {}
+}

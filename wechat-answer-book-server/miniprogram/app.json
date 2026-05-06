@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/privacy/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "月影答案书",
+    "navigationBarBackgroundColor": "#101936",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#101936",
+    "backgroundTextStyle": "light"
+  },
+  "requiredPrivateInfos": [],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

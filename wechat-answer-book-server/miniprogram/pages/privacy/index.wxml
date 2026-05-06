@@ -1,0 +1,30 @@
+<view class="info-page">
+  <view class="page-hero">
+    <text class="eyebrow">PRIVACY</text>
+    <text class="title">隐私说明</text>
+    <text class="lead">我们尽量减少信息收集，只为完成卡牌抽取与本机记录功能。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">我们处理的信息</text>
+    <text class="desc">你主动输入的问题会发送到服务端，用于生成本次卡片结果。小程序不会主动读取手机号、通讯录、位置、相册或麦克风等敏感权限。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">本机记录</text>
+    <text class="desc">最近抽取记录保存在你的设备本地，用于展示历史结果。你可以在首页点击“清空”删除本机记录。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">服务端记录</text>
+    <text class="desc">当前后端示例会保留最近 200 条请求记录，便于排查服务问题。正式上线前请根据实际合规要求明确是否保存、保存时长、删除方式以及是否需要脱敏。</text>
+  </view>
+
+  <view class="panel section">
+    <text class="section-title">运营主体与联系方式</text>
+    <text class="desc">运营主体名称：待填写运营主体</text>
+    <text class="desc">联系邮箱：2950532177@qq.com</text>
+    <text class="desc">客服电话：17339804668</text>
+    <text class="desc">正式提审前，请确保以上信息与微信公众平台隐私指引、主体信息保持一致。</text>
+  </view>
+</view>

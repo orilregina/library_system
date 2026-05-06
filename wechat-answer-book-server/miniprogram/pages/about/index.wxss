@@ -1,0 +1,55 @@
+.info-page {
+  min-height: 100vh;
+  padding: 40rpx 26rpx 56rpx;
+  box-sizing: border-box;
+}
+
+.page-hero {
+  padding: 32rpx 10rpx 28rpx;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  color: #dfb765;
+  font-size: 22rpx;
+  letter-spacing: 8rpx;
+}
+
+.title {
+  display: block;
+  margin-top: 16rpx;
+  color: #fff0c9;
+  font-size: 52rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+}
+
+.lead {
+  display: block;
+  margin-top: 18rpx;
+  color: rgba(248, 236, 211, 0.78);
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+.section {
+  margin-bottom: 24rpx;
+  padding: 30rpx;
+  border-radius: 30rpx;
+}
+
+.section-title {
+  display: block;
+  margin-bottom: 16rpx;
+  color: #e5c97b;
+  font-size: 32rpx;
+}
+
+.desc {
+  display: block;
+  color: rgba(255, 244, 220, 0.84);
+  font-size: 28rpx;
+  line-height: 1.9;
+  margin-top: 10rpx;
+}
